@@ -29,12 +29,9 @@ try:
     print("✅ Model loaded successfully")
 
     # Laptop Camera stream URL (change this)
-    # camera_url = 0
+    camera_url = 0
 
-    # IP Camera stream URL (change this)
-    camera_url = 'http://192.168.137.133:8080/video'  # <-- Replace with your IP!
-
-    # Open the IP camera stream
+    # Open the camera stream
     print("Connecting to IP camera...")
     cap = cv2.VideoCapture(camera_url)
 
