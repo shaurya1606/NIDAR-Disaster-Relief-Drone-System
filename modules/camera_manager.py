@@ -20,7 +20,7 @@ class CameraManager:
         choice = input("Enter choice (1-2): ").strip()
 
         if choice == "1":
-            self.camera_url = 0
+            self.camera_url = 1
             self.source_type = "Laptop/USB Camera"
             print("Using laptop/USB camera")
         else:
