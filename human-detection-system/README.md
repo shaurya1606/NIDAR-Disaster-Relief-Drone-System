@@ -42,7 +42,6 @@ human-detection-system/
 │   ├── detector.py          # YOLOv8-based detection
 │   ├── sound_manager.py     # Audio alerts
 │   └── display_manager.py   # Display & frame saving
-├── detected_frames/         # Saved detection frames
 ├── yolov8n.pt               # YOLOv8 weights
 ├── alert.mp3                # Custom alert sound (optional)
 ├── requirements.txt         # Python dependencies
