@@ -1,0 +1,6 @@
+detected_frames/*
+nidar
+alert.mp3
+yolov8n.pt
+__pycache__
+.gitignore

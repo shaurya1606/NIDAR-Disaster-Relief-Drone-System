@@ -1,6 +1,5 @@
 # Human Detection System with YOLOv8
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python Versions](https://img.shields.io/badge/python-3.8%2B-blue)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.8%2B-green)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-latest-green)
@@ -33,37 +32,45 @@ A robust, real-time human detection system using YOLOv8 and OpenCV. Designed for
 ---
 
 ## 🏗️ Architecture
+
 ```
-main.py
- ├── modules/
- │    ├── camera_manager.py   # Camera input & connection
- │    ├── detector.py         # YOLOv8-based detection
- │    ├── sound_manager.py    # Audio alerts
- │    └── display_manager.py  # Display & frame saving
- ├── detected_frames/         # Saved detection frames
- ├── yolov8n.pt               # YOLOv8 weights
- └── alert.mp3                # Custom alert sound (optional)
+human-detection-system/
+├── main.py                  # Main entry point
+├── modules/
+│   ├── camera_manager.py    # Camera input & connection
+│   ├── detector.py          # YOLOv8-based detection
+│   ├── sound_manager.py     # Audio alerts
+│   └── display_manager.py   # Display & frame saving
+├── detected_frames/         # Saved detection frames
+├── yolov8n.pt               # YOLOv8 weights
+├── alert.mp3                # Custom alert sound (optional)
+├── requirements.txt         # Python dependencies
+├── .gitignore
+└── README.md
 ```
 
 ---
 
 ## 📋 Prerequisites
+
 - Python 3.8 or higher
 - OpenCV 4.8+
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
 - CUDA-capable GPU (optional, for better performance)
 
 ### System Requirements
+
 - **Linux**: `sudo apt-get install libgl1-mesa-glx libglib2.0-0 libasound2-dev portaudio19-dev`
 - **Windows**: Ensure Microsoft Visual C++ Build Tools is installed
 
 ---
 
 ## 🔧 Installation
+
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/human-detection-system.git
-   cd human-detection-system
+   git clone https://github.com/shaurya1606/NIDAR-Disaster-Relief-Drone-System.git
+   cd NIDAR-Disaster-Relief-Drone-System
    ```
 2. **Install dependencies:**
    ```bash
@@ -78,6 +85,7 @@ main.py
 ---
 
 ## 🎮 Usage
+
 1. **Run the main application:**
    ```bash
    python main.py
@@ -96,6 +104,7 @@ main.py
 ---
 
 ## 🧩 Modules
+
 - **modules/camera_manager.py**: Handles camera selection, connection, and reconnection logic.
 - **modules/detector.py**: Loads YOLOv8 model, runs detection, and annotates frames.
 - **modules/sound_manager.py**: Manages alert sound selection and playback (beep or custom mp3).
@@ -104,6 +113,7 @@ main.py
 ---
 
 ## 📂 Output
+
 - **detected_frames/**: Saved frames with detected humans (every Nth detection frame).
 - **alert.mp3**: Custom alert sound (optional, ignored by git).
 - **yolov8n.pt**: YOLOv8 model weights (ignored by git).
@@ -111,6 +121,7 @@ main.py
 ---
 
 ## 🛠️ Troubleshooting
+
 - **No camera detected**: Check your device or IP camera URL.
 - **No sound**: Ensure your system supports `winsound` (Windows) or `playsound` (cross-platform). For custom sounds, place `alert.mp3` in the root directory.
 - **Model not found**: Ensure `yolov8n.pt` is present or let the app download it on first run.
@@ -119,7 +130,12 @@ main.py
 ---
 
 ## 🤝 Contributing
+
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 ---
+
+## 📄 License
+
+This project is licensed under the MIT License.
 

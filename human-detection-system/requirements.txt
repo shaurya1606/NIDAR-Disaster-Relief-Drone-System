@@ -1,0 +1,27 @@
+# requirements.txt for Human Detection System with YOLOv8
+# See: https://github.com/shaurya1606/NIDAR-Disaster-Relief-Drone-System
+
+# --- Core Dependencies ---
+# OpenCV for image processing and camera handling
+opencv-python>=4.8.0
+
+# Ultralytics YOLOv8 for object detection
+ultralytics>=8.0.0
+
+# Numpy for numerical operations
+numpy>=1.24.0
+
+# Pillow for image saving and manipulation
+Pillow>=10.0.0
+
+# playsound for cross-platform audio playback (used for custom alert sounds)
+playsound==1.2.2
+
+# --- Optional/Platform-Specific Dependencies ---
+# winsound is used for beeps on Windows (comes with Python standard library on Windows)
+# If running on Linux, ensure you have the required system packages for OpenCV GUI:
+#   sudo apt-get install libgl1-mesa-glx libglib2.0-0 libasound2-dev portaudio19-dev
+
+# --- Notes ---
+# - yolov8n.pt (YOLOv8 weights) will be downloaded automatically or can be placed manually in the root directory.
+# - alert.mp3 is an optional custom sound file for alerts. 
