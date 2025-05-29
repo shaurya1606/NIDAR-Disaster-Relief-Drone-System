@@ -71,6 +71,7 @@ human-detection-system/
    ```bash
    git clone https://github.com/shaurya1606/NIDAR-Disaster-Relief-Drone-System.git
    cd NIDAR-Disaster-Relief-Drone-System
+   cd human-detection-system
    ```
 2. **Install dependencies:**
    ```bash
