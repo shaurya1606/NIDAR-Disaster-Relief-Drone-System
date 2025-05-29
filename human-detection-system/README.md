@@ -36,7 +36,8 @@ A robust, real-time human detection system using YOLOv8 and OpenCV. Designed for
 ```
 human-detection-system/
 ├── main.py                  # Main entry point
-├── modules/
+├── modules/                 # System Module Directory
+│   ├──__init__.py           # Contain Core Components
 │   ├── camera_manager.py    # Camera input & connection
 │   ├── detector.py          # YOLOv8-based detection
 │   ├── sound_manager.py     # Audio alerts
@@ -45,8 +46,8 @@ human-detection-system/
 ├── yolov8n.pt               # YOLOv8 weights
 ├── alert.mp3                # Custom alert sound (optional)
 ├── requirements.txt         # Python dependencies
-├── .gitignore
-└── README.md
+├── .gitignore               # Files that are ignored
+└── README.md                # Information about the model
 ```
 
 ---
